@@ -1,0 +1,2 @@
+file:src/main/resources/features/SliderPage.feature:4:9
+file:src/main/resources/features/FollowUs.feature:17

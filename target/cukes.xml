@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite errors="0" failures="3" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="21" time="120.491">
+<testcase classname="user able to add to Shop Cart" name="success message display after add to cart" time="6.272">
+<system-out><![CDATA[Given user open page and click on add Random Cart...........................passed
+Then Shopping notification  is visible......................................passed
+]]></system-out>
+</testcase>
+<testcase classname="user should be able to switch between currency" name="user able to switch between currency" time="5.134">
+<system-out><![CDATA[Given user press on currency dropdown and switch to Euro....................passed
+When user scroll down.......................................................passed
+Then Euro should be displayed...............................................passed
+]]></system-out>
+</testcase>
+<testcase classname="switch between windows" name="user able to open facebook" time="6.583">
+<system-out><![CDATA[When user open facebook.....................................................passed
+Then user close facebook and switch back....................................passed
+]]></system-out>
+</testcase>
+<testcase classname="switch between windows" name="user able to open twitter" time="5.252">
+<system-out><![CDATA[When user open twitter......................................................passed
+Then user close twitter and switch back.....................................passed
+]]></system-out>
+</testcase>
+<testcase classname="switch between windows" name="user able to open Rss" time="4.147">
+<failure message="Index: 1, Size: 1" type="java.lang.IndexOutOfBoundsException"><![CDATA[When user open Rss..........................................................failed
+Then user close Rss and switch back.........................................skipped
+
+StackTrace:
+java.lang.IndexOutOfBoundsException: Index: 1, Size: 1
+	at java.util.ArrayList.rangeCheck(ArrayList.java:659)
+	at java.util.ArrayList.get(ArrayList.java:435)
+	at pages.Follow_Page.switchToRss(Follow_Page.java:53)
+	at stepDefinations.FollowUsStepDefinations.navigateRss(FollowUsStepDefinations.java:37)
+	at ✽.user open Rss(file:///E:/ProjectAutomationE-commerce/src/main/resources/features/FollowUs.feature:18)
+]]></failure>
+</testcase>
+<testcase classname="switch between windows" name="user able to open youTube" time="8.561">
+<system-out><![CDATA[When user open youTube......................................................passed
+Then user close youTube and switch back.....................................passed
+]]></system-out>
+</testcase>
+<testcase classname="user select different Categories" name="user able to hover on category then open sub-Category" time="3.493">
+<system-out><![CDATA[Given open Homepage and hover on Category...................................passed
+When user get Text of sub Category..........................................passed
+Then user can open sub-Category.............................................passed
+]]></system-out>
+</testcase>
+<testcase classname="user able to login to Application" name="user should be able to login successfully" time="4.906">
+<system-out><![CDATA[Given user open Login Link..................................................passed
+When user enter Email and Password..........................................passed
+And user click on Login Button..............................................passed
+Then user should login successfully.........................................passed
+]]></system-out>
+</testcase>
+<testcase classname="user should be register to application" name="user able to register" time="7.295">
+<system-out><![CDATA[Given user open Register Link...............................................passed
+When user enter personal data and Email.....................................passed
+And user enter password and confirm password................................passed
+And user click on Register button...........................................passed
+Then page should be opened successfully.....................................passed
+And user log out............................................................passed
+]]></system-out>
+</testcase>
+<testcase classname="search with more product and serial" name="user can search with  more product" time="4.047">
+<system-out><![CDATA[Given user open home page and search........................................passed
+Then user enter my Product as "book" and verify.............................passed
+]]></system-out>
+</testcase>
+<testcase classname="search with more product and serial" name="user can search with  more product 2" time="4.126">
+<system-out><![CDATA[Given user open home page and search........................................passed
+Then user enter my Product as "laptop" and verify...........................passed
+]]></system-out>
+</testcase>
+<testcase classname="search with more product and serial" name="user can search with  more product 3" time="4.088">
+<system-out><![CDATA[Given user open home page and search........................................passed
+Then user enter my Product as "nike" and verify.............................passed
+]]></system-out>
+</testcase>
+<testcase classname="search with more product and serial" name="user can search  more serial product" time="4.092">
+<system-out><![CDATA[Given user open home page and press search..................................passed
+Then user enter my Serials as "SCI_FAITH" and verify........................passed
+]]></system-out>
+</testcase>
+<testcase classname="search with more product and serial" name="user can search  more serial product 2" time="4.115">
+<system-out><![CDATA[Given user open home page and press search..................................passed
+Then user enter my Serials as "APPLE_CAM" and verify........................passed
+]]></system-out>
+</testcase>
+<testcase classname="search with more product and serial" name="user can search  more serial product 3" time="13.979">
+<system-out><![CDATA[Given user open home page and press search..................................passed
+Then user enter my Serials as "SF_PR0_11" and verify........................passed
+]]></system-out>
+</testcase>
+<testcase classname="user able to search on product" name="user should be able to search with Apple product" time="6.366">
+<system-out><![CDATA[Given user open Home Page and open search...................................passed
+When user enter Product as "Apple"..........................................passed
+And user search.............................................................passed
+Then All words of search contain Apple......................................passed
+And user open link and found Sku............................................passed
+]]></system-out>
+</testcase>
+<testcase classname="user compare between two slide" name="user compare between Urls for slide 1" time="3.257">
+<failure message="expected [https://demo.nopcommerce.com/nokia-lumia-1020] but found [https://demo.nopcommerce.com/]" type="java.lang.AssertionError"><![CDATA[Given user can press on first slide.........................................passed
+Then compare between URls of first slide and fail...........................failed
+
+StackTrace:
+java.lang.AssertionError: expected [https://demo.nopcommerce.com/nokia-lumia-1020] but found [https://demo.nopcommerce.com/]
+	at org.testng.Assert.fail(Assert.java:110)
+	at org.testng.Assert.failNotEquals(Assert.java:1413)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:149)
+	at org.testng.Assert.assertEquals(Assert.java:131)
+	at org.testng.Assert.assertEquals(Assert.java:655)
+	at org.testng.Assert.assertEquals(Assert.java:665)
+	at stepDefinations.SliderStepDefinations.comparefirstSlideLink(SliderStepDefinations.java:24)
+	at ✽.compare between URls of first slide and fail(file:///E:/ProjectAutomationE-commerce/src/main/resources/features/SliderPage.feature:6)
+]]></failure>
+</testcase>
+<testcase classname="user compare between two slide" name="user compare between Urls for slide 2" time="3.216">
+<failure message="expected [https://demo.nopcommerce.com/iphone] but found [https://demo.nopcommerce.com/]" type="java.lang.AssertionError"><![CDATA[Given user can press on second slide........................................passed
+Then compare between URls of second slide and fail..........................failed
+
+StackTrace:
+java.lang.AssertionError: expected [https://demo.nopcommerce.com/iphone] but found [https://demo.nopcommerce.com/]
+	at org.testng.Assert.fail(Assert.java:110)
+	at org.testng.Assert.failNotEquals(Assert.java:1413)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:149)
+	at org.testng.Assert.assertEquals(Assert.java:131)
+	at org.testng.Assert.assertEquals(Assert.java:655)
+	at org.testng.Assert.assertEquals(Assert.java:665)
+	at stepDefinations.SliderStepDefinations.compareSecondSlideLink(SliderStepDefinations.java:34)
+	at ✽.compare between URls of second slide and fail(file:///E:/ProjectAutomationE-commerce/src/main/resources/features/SliderPage.feature:11)
+]]></failure>
+</testcase>
+<testcase classname="user able to add product to wish list" name="user able to press on add wish on product" time="3.247">
+<system-out><![CDATA[Given user open page and click on product wishlist..........................passed
+Then message displayed with green...........................................passed
+]]></system-out>
+</testcase>
+<testcase classname="user able to add product to wish list" name="user able to press on add wish on product and open  link Wishlist" time="8.118">
+<system-out><![CDATA[Given user open home page and click on button add to wishlist...............passed
+And wait for element to be invisible........................................passed
+Then user able to click on wishList Link....................................passed
+]]></system-out>
+</testcase>
+<testcase classname="user able to add product to wish list" name="user add to wishlist" time="9.93">
+<system-out><![CDATA[Given user open home page and add to wishlist...............................passed
+And enter all data..........................................................passed
+Then product added to wish list.............................................passed
+]]></system-out>
+</testcase>
+</testsuite>
